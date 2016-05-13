@@ -8,7 +8,7 @@ public class FirstNonRepeatedCharacter {
 			return '\0';
 		}
 
-		HashMap<Character, Integer> hm = new HashMap<Character, Integer>();
+		LinkedHashMap<Character, Integer> hm = new LinkedHashMap<Character, Integer>();
 		char ch = '\0';
 		for(int i=0; i<s.length(); i++) {
 			if(!hm.containsKey(s.charAt(i))) {
