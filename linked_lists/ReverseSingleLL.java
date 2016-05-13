@@ -25,9 +25,6 @@ public class ReverseSingleLL {
 	}
 
 	public static Node reverseListRecursive(Node head) {
-		if(!head) {
-			return;
-		}
 
 		Node first = head;
 		Node rest = first.next;
