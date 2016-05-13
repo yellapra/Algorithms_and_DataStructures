@@ -11,7 +11,6 @@ public class IntegerToString {
 
 		if(num < 0) {
 			isNeg = true;
-			num *= -1;
 		}
 
 		do {
