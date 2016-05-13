@@ -14,7 +14,7 @@ public ArrayList<ArrayList<Integer>> findAllSubSets(ArrayList<Interger> set){
 
 			}
 
-			k = k >> 1;
+			current_subset = current_subset >> 1;
 			index++;
 		}
 		result.add(subset);
