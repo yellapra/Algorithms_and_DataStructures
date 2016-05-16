@@ -28,6 +28,7 @@ public class BTHeight{
 
 			while(nodeCount!=0){
 				Node elem = q.front();
+				q.pop();
 				if(elem.left){
 					q.push(elem.left);
 				}
