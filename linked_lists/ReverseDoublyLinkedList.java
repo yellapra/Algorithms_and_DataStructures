@@ -8,16 +8,17 @@ public class ReverseDoublyLinkedList {
 		if(head.next == null || head.prev == null) {
 			return;
 		}
-
 		Node current = head;
-		Node temp = current.prev;
-		current.prev = current.next;
-		current.next = temp;
-		current = current.prev;
-
-		if(temp != null) {
-			head = temp.prev;
+		Node prev = null;
+		Node temp = null;
+		while(current!=null){
+			temp = current.next;
+			current.next = prev;
+			current.prev = temp;
+			prev = current;
+			current = temp;
 		}
-		return head;
+		
+		return prev;
 	}
 }
