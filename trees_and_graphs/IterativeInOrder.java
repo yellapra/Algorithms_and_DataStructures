@@ -15,7 +15,7 @@ public class IterativeInOrder{
 		//If the right child exists, then you need to traverse its left tree first to repeat the same process.
 		while(!s.isEmpty()){
 			Node elem = s.pop();
-			System.out.println(elem);
+			System.out.println(elem.data);
 			if(elem.right!=null){
 				elem = elem.right;
 			}
