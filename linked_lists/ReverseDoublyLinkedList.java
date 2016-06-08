@@ -3,10 +3,10 @@ import java.util.*;
 public class ReverseDoublyLinkedList {
 	public static Node reverseDoublyLinkedList(Node head) {
 		if(!head) {
-			return;
+			return null;
 		}
 		if(head.next == null || head.prev == null) {
-			return;
+			return head;
 		}
 		Node current = head;
 		Node prev = null;
