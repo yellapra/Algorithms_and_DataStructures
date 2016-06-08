@@ -42,10 +42,10 @@ public class SortLinkedList {
 		}
 
 		if(front.data <= back.data) {
-			result = front.data;
+			result.data = front.data;
 			result.next = merge(front.next, back);
 		}else {
-			result = back.data;
+			result.data = back.data;
 			result.next = merge(front, back.next);
 		}
 		return result;
