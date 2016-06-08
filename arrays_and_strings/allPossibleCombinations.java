@@ -11,7 +11,7 @@ public void allPossibleCombinations(int[] a, int n, int r, int combination_index
 		return;
 	}
 
-	data[combination_index] = a[array_index];
+	combinations[combination_index] = a[array_index];
 	allPossibleCombinations(a, n, r, combination_index+1, combinations, array_index+1);//Include that element
 	allPossibleCombinations(a, n, r, combination_index, combinations, array_index+1);//Exclude that element
 }
