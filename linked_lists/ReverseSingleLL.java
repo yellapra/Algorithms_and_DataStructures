@@ -3,10 +3,10 @@ import java.util.*;
 public class ReverseSingleLL {
 	public static Node reverseListIterative(Node head) {
 		if(!head) {
-			return;
+			return null;
 		}
 		if(head.next == null) {
-			return;
+			return head;
 		}
 		Node previous = head;
 		Node current = previous.next;
