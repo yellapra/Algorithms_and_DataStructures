@@ -21,7 +21,7 @@ public boolean sameSumAubArray(int[] a, int size, int sum){
 	if(sum == 0){
 		return true;
 	}
-	if(n==0 && sum != 0){
+	if(size==0 && sum != 0){
 		return false;
 	}
 	if(a[size-1] > sum){
