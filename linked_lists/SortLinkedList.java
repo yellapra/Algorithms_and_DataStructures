@@ -4,7 +4,7 @@ public class SortLinkedList {
 		Node front = null;
 		Node back = null;
 		if(!head || head.next == null) {
-			return;
+			return head;
 		}
 
 		splitList(head, front, back);
