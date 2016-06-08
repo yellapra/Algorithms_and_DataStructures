@@ -1,6 +1,6 @@
 public class CompareLinkedLists {
+	boolean areEqual;
 	public static boolean compareLinkedLists(Node l1, Node l2) {
-		boolean areEqual = false;
 		if(l1 == null && l2 == null) {
 			areEqual = true;
 		}else {
