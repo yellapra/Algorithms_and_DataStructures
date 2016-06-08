@@ -1,4 +1,4 @@
-public ArrayList<ArrayList<Integer>> findAllSubSets(ArrayList<Interger> set){
+public ArrayList<ArrayList<Integer>> findAllSubSets(ArrayList<Integer> set){
 	if(set == null){
 		return null;
 	}
