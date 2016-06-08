@@ -20,7 +20,7 @@ public ArrayList<String> findAllPermutations(String str){
 	return permutations;
 }
 
-void insertChar(char s, String remainder, int i){
+String insertChar(char s, String remainder, int i){
 	String start = remainder.substring(0, i);
 	String end = remainder.substring(i);
 	return start + s + end;
