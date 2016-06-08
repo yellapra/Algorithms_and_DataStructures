@@ -1,13 +1,13 @@
 //Call with allPossibleCombinations(a, n, r, 0, combinations, 0);
 public void allPossibleCombinations(int[] a, int n, int r, int combination_index, int[] combinations, int array_index){
 
-	if(index == r){
+	if(array_index == r){
 		for(int i = 0; i<combinations.length; i++){
 			System.out.print(combinations[i]+ " ");
 		}
 	}
 
-	if(array_index>==n){
+	if(array_index>=n){
 		return;
 	}
 
